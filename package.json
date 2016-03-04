@@ -1,0 +1,11 @@
+{
+  "name": "zr-promo-page",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-sass": "^1.1.0"
+  }
+}

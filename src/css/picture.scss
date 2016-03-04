@@ -1,0 +1,174 @@
+.picture-section {
+	height: 600px;
+	padding: 15px 0;
+	background: rgb(0, 0, 0) url("../img/main-img.jpg") repeat scroll 50% 50%;
+	@include background-image-2x("../img/main-img@2x.jpg", 1280px, 853px);
+}
+
+.inscriptions-row {
+}
+
+.inscription-play {
+	margin: 30px 40px 0 0;
+	text-align: right;
+}
+
+.inscription-any-way {
+	width: 394px;
+	text-align: right;
+}
+
+.inscription-win {
+  	margin: 10px 0 0 50px;
+  	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.inscription-cost {
+  	color: #fff;
+  	font-size: 18px;
+  	margin: 0 20px;
+  	text-align: right;
+  	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.inscription-cost__value {	
+	font-size: 26px;
+}
+
+.inscription-cost__text {
+}
+
+.signs-row {	
+}
+
+.smartphone {
+	margin: 45px auto 0;
+    padding: 0 20px;
+    width: 375px;
+}
+
+.smartphone__picture {
+	width: 132px;
+	height: 260px;
+	float: left;
+	background: url("../img/smartphone.png");
+	@include background-image-2x("../img/smartphone@2x.png", 132px, 260px);
+}
+
+.smartphone__text {
+	float: left;
+    font-size: 20px;
+    margin: 30px 0 0 13px;
+    width: 150px;
+}
+
+.signs {
+	position: relative;
+	height: 375px;
+}
+
+.sign-box {
+	$width: 190px;
+
+	width: $width;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	display: none;
+	z-index: 10;
+	background: $orange_color;
+	@include box-shadow(-8px, 8px, 5px, rgba(0, 0, 0, 0.4));
+}
+
+.sign {
+	$diameter: 60px;
+	$border: 6px;
+
+	background: #fff;
+	border: $border solid $orange_color;
+	position: absolute;
+	width: $diameter;
+	height: $diameter;
+	line-height: $diameter - 1.5 * $border;
+	text-align: center;
+	font-size: 22px;
+	cursor: pointer;
+	@include border-radius($diameter / 2);
+	@include box-shadow(-8px, 8px, 5px, rgba(0, 0, 0, 0.4));
+
+	&:hover + .sign-box,
+	&:focus + .sign-box {
+		display: block;
+	}	
+}
+
+.sign-box_1 {
+	right: 101px;	
+    top: -23px;
+}
+
+.sign-box_2 {
+	right: 202px;
+    top: 39px;
+}
+
+.sign-box_3 {
+	right: 112px;
+    top: 98px;
+}
+
+.sign-box_4 {
+	right: 210px;
+    top: 159px;
+}
+
+.sign-box_5 {
+	right: 120px;
+    top: 220px;
+}
+
+.sign-box__text {
+	padding: 10px;
+	@include border-beak(16px, 14px, $orange_color);
+}
+
+.sign-box__text::after {
+}
+
+.sign_1 {
+	top: 30px;
+	right: 30px;
+}
+
+.sign_2 {
+	top: 90px;
+	right: 130px;
+}
+
+.sign_3 {
+	top: 150px;
+	right: 40px;
+}
+
+.sign_4 {
+	top: 210px;
+	right: 140px;
+}
+
+.sign_5 {
+	top: 270px;
+	right: 50px;
+}
+
+.ford-box {
+	text-align: right;
+}
+
+.ford-box__link {
+	@extend .link;
+	font-style: italic;
+  	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+	border-bottom-width: 0;
+	&:hover {border-bottom-width: 1px;}
+}

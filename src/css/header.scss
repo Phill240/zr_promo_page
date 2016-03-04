@@ -1,0 +1,144 @@
+.header {
+	background: url('../img/head-pattern.png');
+	height: 150px;
+}
+
+.header-logo-row {
+}
+
+.header-logo {
+	padding: 23px 0 0;
+	text-align: center;
+}
+
+.header-buttons__red {
+	display: inline-block;
+	background: $red_color;
+	line-height: 36px;
+	margin: 0 10px;
+    padding: 0 10px;
+	font-weight: bold;
+	color: #fff;
+
+	@include border-inclined-right(7px, 36px, #e40025);
+	@include border-inclined-left(7px, 36px, #e40025);
+}
+
+.header-buttons {
+	text-align: right;
+}
+
+.header-greeting {
+	padding: 20px 0 0 40px;
+}
+
+.header-avatar {
+	width: 62px;
+	height: 62px;
+	border-radius: 100%;
+	float: left;
+	background: url('../img/avatar.jpg');
+	@include background-image-2x("../img/avatar@2x.jpg", 62px, 62px);
+}
+
+.header-user {
+	color: #fff;
+    float: left;
+    line-height: 62px;
+    margin: 0 0 0 10px;
+}
+
+.header-user__name {
+}
+
+.header-user__notice {
+	$font-size: 12px;
+	$height: 16px;
+
+  	background: $red_color;
+  	font-style: italic;
+  	font-size: $font-size;
+  	line-height: $height;
+  	display: inline-block;
+  	position: relative;
+  	top: -14px;
+  	padding: 0 4px 0 2px;
+  	margin: 0 4px;
+
+	@include border-inclined-right(2px, $height, #e40025);
+	@include border-inclined-left(2px, $height, #e40025);
+}
+
+.header-menu-row {
+}
+
+.header-all-site {
+	$height: 56px;
+
+	background: $red_color;
+	line-height: $height;
+	margin-left: -15px;
+	display: inline-block;
+	padding: 0 16px;
+	position: relative;
+	top: 6px;
+	color: #fff;
+
+	@include border-inclined-right(9px, $height, #e40025);
+}
+
+.header-all-site__icon {
+    font-size: 28px;
+    padding: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+.header-all-site__link {	
+}
+
+.header-nav {
+	text-align: center;
+}
+
+.nav {
+	display: inline-block;
+	margin: 24px 0 0;
+}
+
+.nav__link {
+	margin: 0 11px;
+}
+
+.header-search {
+    margin: 18px 0 0;
+    position: relative;
+}
+
+.header-search__input {
+	line-height: 18px;
+	color: #848484;
+	background: transparent;
+	border: 1px solid #1a1a1a;
+	font-size: 14px;
+	padding: 5px 30px 5px 10px;
+	width: 100%;
+	@include border-radius(4px);	
+
+	&:focus {background: #fff;}
+}
+
+.header-search__button {
+	$size: 16px;
+
+	color: #848484;
+  	background: none;
+  	border: none;
+  	font-size: $size;
+  	height: 100%;
+  	line-height: $size;
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+  	cursor: pointer;
+  	vertical-align: middle;
+}

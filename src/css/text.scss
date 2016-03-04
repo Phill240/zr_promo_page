@@ -1,0 +1,119 @@
+.text-col_left {
+	max-width: 700px;
+	float: right;
+	margin-right: -15px;
+}
+
+.points {
+	padding: 0;
+}
+
+.point {
+	background: $orange_color;
+	padding: 10px;
+	color: #fff;
+	min-height: 68px;
+}
+
+.point__number {
+	font-size: 56px;
+	font-weight: bold;
+	line-height: 50px;
+	float: left;
+}
+
+.point__text {
+    margin-left: 38px;
+}
+
+.text-article {	
+}
+
+.col-prizes {
+	position: relative;
+	top: -60px;
+
+}
+
+.text-prizes {
+	margin-right: -15px;
+	min-height: 670px;
+	padding: 0 0 0 40px;
+	position: relative;
+    z-index: 2;
+	background: rgba(0, 0, 0, 0) url("../img/race.png") no-repeat scroll 0 100%;
+	@include background-image-2x("../img/race@2x.png", 450px, 264px);
+}
+
+.stack {
+	height: 350px;
+	position: relative;
+}
+
+.stack__element {
+    position: absolute;
+    width: 170px;
+    height: 224px;
+    top: 0;
+    left: 0;
+}
+
+.stack__element_1 {
+	z-index: 2;
+	background: url('../img/cover-1.jpg');
+	@include background-image-2x("../img/cover-1@2x.jpg", 170px, 224px);
+	@include box-shadow(1px, 1px, 2px, rgba(0, 0, 0, 0.1));
+}
+
+.stack__element_2 {
+    z-index: 3;
+	left: 30px;
+    top: 35px;
+	background: url('../img/cover-2.jpg');
+	@include background-image-2x("../img/cover-2@2x.jpg", 170px, 224px);
+	@include box-shadow(1px, 1px, 2px, rgba(0, 0, 0, 0.1));
+}
+
+.stack__element_3 {
+    width: 160px;
+    height: 125px;
+    z-index: 4;
+	left: 58px;
+    top: 170px;
+	background: url('../img/cover-3.png');
+	@include background-image-2x("../img/cover-3@2x.png", 160px, 125px);
+}
+
+.stack__element_4 {
+    width: 65px;
+    height: 129px;
+    z-index: 5;
+	left: 134px;
+    top: 220px;
+	background: url('../img/cover-4.png');
+	@include background-image-2x("../img/cover-4@2x.png", 65px, 129px);
+}
+
+.prizes-list {	
+	position: relative;
+	top: -60px;
+}
+
+.prizes-list__element {
+	font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 0 40px;
+
+    &:last-child {
+    	margin-bottom: 0;
+    }
+}
+
+.text-duration {	
+	z-index: 1;
+	margin: -15px -15px 0 0;
+	padding: 6px 40px 6px 10px;
+	background: $orange_color;
+	color: #fff;
+	text-align: right;
+}
